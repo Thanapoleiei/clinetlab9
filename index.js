@@ -10,4 +10,4 @@ app.get('/crash',(req,res) => {
     res.send('Crash')
     process.exit(1)
 })
-app.listen(80, () => console.log('server running at ',80));
+app.listen(process.env.PORT, () => console.log('server running at ',process.env.PORT));
